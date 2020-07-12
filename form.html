@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<style>
+    #content {
+        margin: 20px;
+    }
+
+    .responsive {
+        width: 100%;
+        height: 350px;
+    }
+body{margin: 2px;
+line-height: initial;
+font-size: unset;}
+    .bg-light {
+        background-color: #1ee9a7 !important;
+    }
+
+    .helpline {
+        background-color: #20af80 !important;
+        margin-bottom: 0rem;
+    }
+    .fieldset{padding: 15px;
+    margin: -5px;
+    border: double;}
+    
+    .name{margin: 7px -3px;
+}
+</style>
+
+<body>
+    <!--Healpline-->
+    <div>
+        <center>
+            <p class="helpline">Dial <b>1166</b> Health Helpline</p>
+        </center>
+    </div>
+    <!--Nav bar / menu bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Corona Virus Pandemic</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="symptoms of coronavirus.html"> Symptoms </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="table of corona virus.html"> Cases </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="prevention.html"> Prevention </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="image gallery.html"> Image Gallery </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    
+
+    <div id="content">
+        <legend> Covid-19 Self-Checker</legend>
+        <fieldset class="fieldset">
+            
+            <form action="">
+                <p>Full Name: &nbsp; &nbsp; &nbsp; &nbsp;<span class="name"><input  type="text" size="20" maxlength="30" required="required" ></span></p>
+
+                <p>Email Address: <input type="email" name="email" size="20" maxlength="30" required="required"></p>
+                <p>What is your gender? <br>
+                    <input type="radio" name="Gender" value="Male">Male
+                    <input type="radio" name="Gender" value="Female">Female
+                </p>
+                <div>
+                    <p>How old are you? <br>
+                        <select name="age" id="">
+                            <option value="Under 18">Under 18</option>
+                            <option value="18-60">18-60</option>
+                            <option value="60 Above">60 Above</option>
+                        </select>
+                    </p>
+                </div>
+
+
+                <p>DO you have any travel history in the last month? <br>
+                    <input type="radio" name="travel" value="YES">YES
+                    <input type="radio" name="travel" value="NO" required="required">NO
+                </p>
+
+                <p>DO you have a fever? <br>
+                    <input type="radio" name="fever" value="YES">YES
+                    <input type="radio" name="fever" value="NO" required="required">NO
+                </p>
+
+                <p>Are you experinecing new or worsening dry cough?<br>
+                    <input type="radio" name="cough" value="YES">YES
+                    <input type="radio" name="cough" value="NO" required="required">NO
+                </p>
+
+                <p>Are you suffering from any difficulty iin breathing?<br>
+                    <input type="radio" name="breathing" value="YES">YES
+                    <input type="radio" name="breathing" value="NO" required="required">NO
+                </p>
+
+                <p>Have you had any close contact with someone diagnosed with Covid-19 or have any symptoms of
+                    Covid-19?<br>
+                    <input type="radio" name="contact" value="YES">YES
+                    <input type="radio" name="contact" value="NO" required="required">NO</p>
+
+                <input type="Submit">
+
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
