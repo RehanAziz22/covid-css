@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Of Corona Virus</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Cases</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      </head>
+
 
 <style>
     body{font-family: sans-serif;}
@@ -27,10 +30,7 @@ font-size: 90%;
 border-bottom: 2px solid #111111;
 border-top: 1px solid #999;
 text-align: left;}
-td.even {
-background-color: #ff9292;}
-tr:hover {
-background-color: #00ff1569;}
+
 .money {
 text-align: right;}
     .responsive {
@@ -38,13 +38,10 @@ text-align: right;}
         height: 350px;
     }
 
-    .bg-light {
-        background-color: #1ee9a7 !important;
-    }
-
     .helpline {
-        background-color: #20af80 !important;
+        background-color: #060a09 !important;
         margin-bottom: 0rem;
+        color: red;
     }
 
     #COUNTRIES {
@@ -71,12 +68,25 @@ text-align: right;}
         border-top: 1px solid #dfdfdf;
         background-color: #f7f7f7;
     }
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+td:hover {background-color: skyblue;}
+tr:hover {
+background-color: #ff000069;}
+
 
     .li {
         color: #21759b;
     }
     .copyrights
 {margin: 145px auto auto auto;}
+
+table{border-spacing: 25px 5px;}
+td ,th {
+
+padding: 10px;
+border: 3px solid floralwhite;}
 
 </style>
 
@@ -92,40 +102,31 @@ text-align: right;}
 
 
 
-    <!--Nav bar / menu bar-->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <!--Nav bar / menu bar-->
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Corona Virus Pandemic</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Corona Virus Pandemic</a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="symptoms of coronavirus.html"> Symptoms </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="prevention.html"> Prevention </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="image gallery.html"> Image Gallery </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="form.html">Form</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li><li class="nav-item">
+                <a class="nav-link" href="symptoms.html">Symptoms</a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="prevention.html">Prevention</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="image gallery.html">Image Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Form</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav>
    
     &nbsp;
     <center id="content">
