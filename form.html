@@ -1,44 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Corona Virus Pandemic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     
+</head>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Corona Virus Pandemic</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-      </head>
-<style>
-    #content {
-        margin: 20px;
-    }
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    .responsive {
-        width: 100%;
-        height: 350px;
-    }
-body{margin: 2px;
-line-height: initial;
-font-size: unset;}
-   
-    .submit {
-        background-color: #1ee9a7 !important;
-    }
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
 
-    .helpline {
-        background-color: #060a09 !important;
-        margin-bottom: 0rem;
-        color: red;
-    }
-    .fieldset{padding: 15px;
+        select {
+            background: white;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 41px;
+            max-width: 95%;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+<style> .helpline {
+    background-color: #060a09 !important;
+    margin-bottom: 0rem;
+    color: red;
+}
+.fieldset{padding: 15px;
     margin: -5px;
     border: double;
     background: whitesmoke;}
     
-    .name{margin: 7px -3px;
-}
 .FOOTER {
         FLOAT: left;
         MARGIN: 0 auto;
@@ -54,106 +109,161 @@ font-size: unset;}
         padding: 22px 14px 65px 14px;
         border-top: 1px solid #dfdfdf;
         background-color: #f7f7f7;
-    }
-
-    .li {
-        color: #21759b;
-    }
-    .copyrights
+    } .copyrights
 {margin: 145px auto auto auto;}
-
 </style>
 
 <body>
-    <!--Healpline-->
-    <div>
-        <center>
-            <p class="helpline">Dial <b>1166</b> Health Helpline</p>
-        </center>
-    </div>
-    <!--Nav bar / menu bar-->
+   <!--Healpline-->
+   <div>
+    <center>
+        <p class="helpline">Dial <b>1166</b> Health Helpline</p>
+    </center>
+</div>
+<!--Nav bar / menu bar-->
 
-      <!--Nav bar / menu bar-->
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Corona Virus Pandemic</a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li><li class="nav-item">
-                <a class="nav-link" href="symptoms.html">Symptoms</a>
-              </li><li class="nav-item">
-                <a class="nav-link" href="table of corona virus.html">Cases</a>
-              </li><li class="nav-item">
-                <a class="nav-link" href="prevention.html">Prevention</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="image gallery.html">Image Gallery</a>
-            </li>
-               
-          </ul>
-        </div>  
-      </nav>
-
+  <!--Nav bar / menu bar-->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Corona Virus Pandemic</a>
     
-
-    <div id="content">
-        <legend> Covid-19 Self-Checker</legend>
-        <fieldset class="fieldset">
-            
-            <form action="">
-                <p>Full Name: &nbsp; &nbsp; &nbsp; &nbsp;<span class="name"><input  type="text" size="20" maxlength="30" required="required" ></span></p>
-
-                <p>Email Address: <input type="email" name="email" size="20" maxlength="30" required="required"></p>
-                <p>What is your gender? <br>
-                    <input type="radio" name="Gender" value="Male">Male
-                    <input type="radio" name="Gender" value="Female">Female
-                </p>
-                <div>
-                    <p>How old are you? <br>
-                        <select name="age" id="">
-                            <option value="Under 18">Under 18</option>
-                            <option value="18-60">18-60</option>
-                            <option value="60 Above">60 Above</option>
-                        </select>
-                    </p>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="symptoms.html">Symptoms</a>
+          </li><li class="nav-item">
+            <a class="nav-link" href="table of corona virus.html">Cases</a>
+          </li><li class="nav-item">
+            <a class="nav-link" href="prevention.html">Prevention</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="image gallery.html">Image Gallery</a>
+        </li>
+           
+      </ul>
+    </div>  
+  </nav>
+    <br>
+    <div class="container">
+        
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
                 </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Email Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your email address.."
+                        required="required">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="age">How old are you?</label>
+                </div>
+                <div class="col-75">
+                    <select id="age" name="age" required="required">
+                        <option value="Under 18"required="required">Under 18</option>
+                        <option value="18-60">18-60</option>
+                        <option value="60 Above">60 Above</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">What is your gender?</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="lname" name="Gender" required="required" value="Male">Male
+                    <input type="radio" id="lname" name="Gender" required="required" value="Female">Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">DO you have any travel history in the last month?</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="lname" name="travel" required="required" value="Yes">Yes
+                    <input type="radio" id="lname" name="travel" required="required" value="No">No
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">DO you have a fever? </label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="lname" name="fever" required="required" value="Yes">Yes
+                    <input type="radio" id="lname" name="fever" required="required" value="No">No
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Are you experinecing new or worsening dry cough?</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="lname" name="cough" required="required" value="Yes">Yes
+                    <input type="radio" id="lname" name="cough" required="required" value="No">No
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Are you suffering from any difficulty iin breathing?</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="lname" name="breathing" required="required" value="Yes">Yes
+                    <input type="radio" id="lname" name="breathing" required="required" value="No">No
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Have you had any close contact with someone diagnosed with Covid-19 or have any
+                        symptoms of
+                        Covid-19?</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="lname" name="contact" required="required" value="Yes">Yes
+                    <input type="radio" id="lname" name="contact" required="required" value="No">No
+                </div>
+            </div>
 
 
-                <p>DO you have any travel history in the last month? <br>
-                    <input type="radio" name="travel" value="YES">YES
-                    <input type="radio" name="travel" value="NO" required="required">NO
-                </p>
-
-                <p>DO you have a fever? <br>
-                    <input type="radio" name="fever" value="YES">YES
-                    <input type="radio" name="fever" value="NO" required="required">NO
-                </p>
-
-                <p>Are you experinecing new or worsening dry cough?<br>
-                    <input type="radio" name="cough" value="YES">YES
-                    <input type="radio" name="cough" value="NO" required="required">NO
-                </p>
-
-                <p>Are you suffering from any difficulty iin breathing?<br>
-                    <input type="radio" name="breathing" value="YES">YES
-                    <input type="radio" name="breathing" value="NO" required="required">NO
-                </p>
-
-                <p>Have you had any close contact with someone diagnosed with Covid-19 or have any symptoms of
-                    Covid-19?<br>
-                    <input type="radio" name="contact" value="YES">YES
-                    <input type="radio" name="contact" value="NO" required="required">NO</p>
-
-                <span ><input class="submit" type="Submit"></span>
-
-            </form>
-        </fieldset>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Do you have any other disease e.g "Cancer\Sugar\T.B......?"</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        
     </div>
+    <br>
     <div id="wporg-footer">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 FOOTER">
             <li class="nav-item li">
@@ -188,5 +298,3 @@ font-size: unset;}
         </center>
     </div>
 </body>
-
-</html>
